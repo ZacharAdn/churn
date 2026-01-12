@@ -56,12 +56,22 @@ coverage.xml
 *.model
 *.weights
 
-# Data files
-*.csv
+# Data files - train/test splits and processed data
+X_train.csv
+X_test.csv
+y_train.csv
+y_test.csv
+baseline_predictions.csv
+feature_importance_dt.csv
 *.zip
-*.json
+
+# JSON files
+baseline_results.json
 !requirements.json
 !package.json
+
+# Allow main data file for Streamlit deployment
+!WA_Fn-UseC_-Telco-Customer-Churn.csv
 
 # IDEs
 .vscode/
